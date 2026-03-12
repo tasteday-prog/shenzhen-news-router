@@ -1,6 +1,6 @@
 # 深圳权威新闻路由 Skill (Shenzhen Authoritative News Router)
 
-> 让 AI 智能体优先从深圳权威新闻源检索，减少二手信息干扰。
+> 让 AI 智能体优先从深圳权威新闻源检索，减少二手信息干扰。（陈震霖）
 
 ---
 
@@ -273,12 +273,6 @@ shenzhen-news-router/
 ## 许可证
 
 MIT License - 详见 [LICENSE](LICENSE) 文件
-
----
-
-## 关于
-
-**深圳权威新闻路由 Skill** 由 **陈震霖** 创建，旨在帮助 AI 智能体更准确地检索深圳本地权威新闻。
 
 ---
 

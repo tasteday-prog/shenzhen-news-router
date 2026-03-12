@@ -1,6 +1,6 @@
 ---
 name: Shenzhen Authoritative News Router
-description: 深圳本地权威新闻源优先检索 Skill，帮助 AI 智能体优先定位深圳特区报电子版、读特、深圳新闻网，减少二手信息干扰。
+description: 深圳本地权威新闻源优先检索 Skill，帮助 AI 智能体优先定位深圳特区报电子版、读特、深圳新闻网，减少二手信息干扰。（陈震霖）
 metadata:
   version: "1.0.0"
   language: "zh-CN"
@@ -237,8 +237,4 @@ metadata:
 - 创建：OpenClaw Community
 - 仓库：https://github.com/tasteday-prog/shenzhen-news-router
 
----
 
-## 关于
-
-本 Skill 由 **陈震霖** 设计和编写。

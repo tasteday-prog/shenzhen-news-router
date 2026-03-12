@@ -196,9 +196,3 @@ openclaw restart
 - 项目主页：https://github.com/tasteday-prog/shenzhen-news-router
 - 问题反馈：https://github.com/tasteday-prog/shenzhen-news-router/issues
 - 使用示例：参见 examples.md
-
----
-
-## 关于
-
-本 Skill 由 **陈震霖** 创建。
