@@ -225,15 +225,17 @@ git push origin main
 
 ---
 
-## 作者
-
-- **陈震霖** - 深圳版创建者
-
 ## 联系方式
 
 - 主仓库：https://github.com/tasteday-prog/shenzhen-news-router
 - 问题反馈：提交 Issue
 - 城市适配：提交 PR 或联系维护者
+
+---
+
+## 关于
+
+深圳版由 **陈震霖** 创建。欢迎更多城市版本的贡献！
 
 ---
 

@@ -1,7 +1,5 @@
 # 安装说明
 
-> **作者**: 陈震霖
-
 ## 支持的平台
 
 本 Skill 采用标准 Skill 格式，支持以下 AI 工具平台：
@@ -198,3 +196,9 @@ openclaw restart
 - 项目主页：https://github.com/tasteday-prog/shenzhen-news-router
 - 问题反馈：https://github.com/tasteday-prog/shenzhen-news-router/issues
 - 使用示例：参见 examples.md
+
+---
+
+## 关于
+
+本 Skill 由 **陈震霖** 创建。

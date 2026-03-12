@@ -258,10 +258,6 @@ shenzhen-news-router/
 
 ---
 
-## 作者
-
-- **陈震霖** - 项目创建者和主要维护者
-
 ## 贡献与反馈
 
 欢迎提交 Issue 和 PR：
@@ -277,6 +273,12 @@ shenzhen-news-router/
 ## 许可证
 
 MIT License - 详见 [LICENSE](LICENSE) 文件
+
+---
+
+## 关于
+
+**深圳权威新闻路由 Skill** 由 **陈震霖** 创建，旨在帮助 AI 智能体更准确地检索深圳本地权威新闻。
 
 ---
 
