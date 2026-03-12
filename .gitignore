@@ -1,0 +1,31 @@
+# OpenClaw / Claw / AI Agent Skill 忽略规则
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 临时文件
+*.tmp
+*.temp
+*.log
+
+# 测试数据
+test-data/
+*.test.json
+
+# 本地配置（用户自定义）
+config.local.json
+.env
+
+# 文档生成
+docs/_build/
+site/
+
+# 依赖（如有）
+node_modules/
+__pycache__/
+*.pyc

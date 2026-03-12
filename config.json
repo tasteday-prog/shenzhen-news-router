@@ -1,0 +1,166 @@
+{
+  "skill_name": "Shenzhen Authoritative News Router",
+  "skill_name_zh": "深圳权威新闻路由",
+  "version": "1.0.0",
+  "description": "深圳本地权威新闻源优先检索 Skill，帮助 AI 智能体优先定位深圳特区报电子版、读特、深圳新闻网",
+  "description_en": "Prioritize Shenzhen authoritative news sources: sztqb.sznews.com, dutenews.com, sznews.com",
+  
+  "priority_sources": [
+    {
+      "name": "深圳特区报电子版",
+      "name_en": "Shenzhen Special Zone Daily E-Edition",
+      "domain": "sztqb.sznews.com",
+      "priority": 1,
+      "use_for": ["党报", "政策", "官方发布", "纸媒溯源", "历史报道"],
+      "use_for_en": ["party newspaper", "policy", "official release", "print media source", "historical reports"],
+      "search_pattern": "site:sztqb.sznews.com",
+      "description": "深圳市委机关报电子版，最权威的政策发布和纸媒原文渠道"
+    },
+    {
+      "name": "读特",
+      "name_en": "DuTe News",
+      "domain": "dutenews.com",
+      "priority": 2,
+      "use_for": ["即时新闻", "本地动态", "客户端内容", "突发新闻", "民生资讯"],
+      "use_for_en": ["breaking news", "local updates", "app content", "urgent news", "people's livelihood"],
+      "search_pattern": "site:dutenews.com",
+      "description": "深圳报业集团官方客户端，即时更新本地新闻"
+    },
+    {
+      "name": "深圳新闻网",
+      "name_en": "Shenzhen News Network",
+      "domain": "sznews.com",
+      "priority": 3,
+      "use_for": ["综合门户", "公开信息", "城区新闻", "政务信息", "生活服务"],
+      "use_for_en": ["comprehensive portal", "public information", "district news", "government affairs", "life services"],
+      "search_pattern": "site:sznews.com",
+      "description": "深圳重点新闻网站，综合性权威门户"
+    }
+  ],
+  
+  "trigger_keywords": {
+    "direct_triggers": [
+      "深圳新闻",
+      "深圳本地",
+      "深圳报道",
+      "深圳资讯",
+      "深圳消息",
+      "深圳媒体"
+    ],
+    "domain_triggers": [
+      "深圳政策",
+      "深圳民生",
+      "深圳教育",
+      "深圳交通",
+      "深圳城建",
+      "深圳科技",
+      "深圳产业",
+      "深圳经济",
+      "深圳文化",
+      "深圳体育",
+      "深圳天气",
+      "深圳疫情",
+      "深圳公告",
+      "深圳通知"
+    ],
+    "media_triggers": [
+      "深圳特区报",
+      "读特",
+      "深圳新闻网",
+      "深圳报业",
+      "深圳商报",
+      "深圳晚报",
+      "晶报",
+      "宝安日报",
+      "龙岗日报",
+      "龙华新闻",
+      "坪山新闻",
+      "光明新闻"
+    ],
+    "scenario_triggers": [
+      "深圳今天",
+      "深圳最近",
+      "深圳最新",
+      "深圳突发",
+      "深圳权威",
+      "深圳官方",
+      "深圳发生了什么",
+      "深圳有什么新闻",
+      "深圳大事",
+      "深圳动态",
+      "深圳热点",
+      "深圳焦点"
+    ],
+    "district_triggers": [
+      "南山新闻",
+      "福田新闻",
+      "罗湖新闻",
+      "宝安新闻",
+      "龙岗新闻",
+      "盐田新闻",
+      "龙华新闻",
+      "坪山新闻",
+      "光明新闻",
+      "大鹏新闻",
+      "前海新闻",
+      "河套新闻"
+    ],
+    "english_triggers": [
+      "Shenzhen news",
+      "Shenzhen local",
+      "Shenzhen today",
+      "Shenzhen breaking",
+      "Shenzhen media",
+      "Shenzhen report",
+      "news in Shenzhen",
+      "Shenzhen daily"
+    ]
+  },
+  
+  "behavior_rules": {
+    "source_selection": {
+      "paper_media_policy": "sztqb.sznews.com",
+      "breaking_news_policy": "dutenews.com",
+      "comprehensive_policy": "sznews.com",
+      "default_policy": "all_three"
+    },
+    "result_ranking": [
+      "原始报道页面",
+      "官方首发链接",
+      "权威平台整合",
+      "政府网站转载",
+      "其他公开网页"
+    ],
+    "excluded_sources": [
+      "匿名论坛",
+      "未经验证的自媒体",
+      "短视频平台非官方账号",
+      "明显二手转述无出处"
+    ],
+    "fallback_behavior": {
+      "announce_missing": true,
+      "fallback_to_general_search": true,
+      "reliability_warning": true
+    }
+  },
+  
+  "response_templates": {
+    "source_intro": "根据{source_name}报道：",
+    "source_intro_en": "According to {source_name}:",
+    "multiple_sources": "以下信息来自深圳权威新闻源：",
+    "multiple_sources_en": "Information from Shenzhen authoritative sources:",
+    "fallback_notice": "未在深圳特区报电子版、读特、深圳新闻网找到直接相关报道，以下信息来自普通搜索：",
+    "fallback_notice_en": "No direct results found in priority sources. Information from general search:",
+    "view_original": "建议查看原文：{url}",
+    "view_original_en": "View original: {url}"
+  },
+  
+  "metadata": {
+    "created_date": "2026-03-12",
+    "last_updated": "2026-03-12",
+    "maintainer": "OpenClaw Community",
+    "license": "MIT",
+    "language": "zh-CN",
+    "region": "Shenzhen, Guangdong, China"
+  }
+}
