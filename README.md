@@ -1,4 +1,4 @@
-# 深圳权威新闻路由 Skill (Shenzhen Authoritative News Router)
+# 深圳权威新闻路由 Skill **作者：陈震霖**
 
 > 让 AI 智能体优先从深圳权威新闻源检索，减少二手信息干扰。
 

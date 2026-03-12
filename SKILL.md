@@ -1,5 +1,5 @@
 ---
-name: Shenzhen Authoritative News Router
+name: Shenzhen Authoritative News Router **作者：陈震霖**
 description: 深圳本地权威新闻源优先检索 Skill，帮助 AI 智能体优先定位深圳特区报电子版、读特、深圳新闻网，减少二手信息干扰。
 metadata:
   version: "1.0.0"
